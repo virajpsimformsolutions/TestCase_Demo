@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import axios from 'axios';
-import React, {useCallback, useState} from 'react';
-import {Button, FlatList, Text, View} from 'react-native';
+import React, { useCallback, useState } from 'react';
+import { Button, FlatList, Text, View } from 'react-native';
 import RenderedItemData from './ItemData';
 
 const APIView = () => {
@@ -12,25 +11,25 @@ const APIView = () => {
     setState(data?.data?.entries);
   };
 
-  // const renderItem = useCallback(({item}) => {
-  //   return <RenderedItemData item={item} />;
-  // }, []);
+  const renderItem = useCallback(({ item }) => {
+    return <RenderedItemData item={item} />;
+  }, []);
 
   const renderText = useCallback(() => {
     return <Text>API Called</Text>;
   }, []);
 
-  const RenderedItemData = ({item}: any) => {
+  const RenderedItemData = ({ item }: any) => {
     return (
-      <View testID='renderedItemData'>
+      <View testID="renderedItemData">
         <Text>{item?.API}</Text>
       </View>
     );
   };
   return (
-    <View testID='entryScreen'>
+    <View testID="entryScreen">
       {renderText()}
-      <Button testID='ApiCalledButton' title='ApiCalled' onPress={apiCalled} />
+      <Button testID="ApiCalledButton" title="ApiCalled" onPress={apiCalled} />
       <FlatList
         data={state}
         keyExtractor={(item, index) => String(index)}

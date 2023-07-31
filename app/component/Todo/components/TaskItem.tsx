@@ -1,7 +1,7 @@
-import React, {memo, useEffect, useRef, useState} from 'react';
-import {Alert, Image, StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
+import React, { memo, useEffect, useRef, useState } from 'react';
+import { Alert, Image, StyleSheet, TextInput, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
-import {TodoItem} from '../../../redux/Todo/types';
+import { TodoItem } from '../../../redux/Todo/types';
 import editIcon from '../assets/icons/edit.png';
 import trashIcon from '../assets/icons/trash/trash.png';
 
@@ -13,7 +13,7 @@ interface TaskItemProps {
   updateTaskName: (id: number, newTaskName: string) => void;
 }
 
-const TaskItem = ({index, task, toggleTaskDone, removeTask, updateTaskName}: TaskItemProps) => {
+const TaskItem = ({ index, task, toggleTaskDone, removeTask, updateTaskName }: TaskItemProps) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editingTaskText, setEditingTaskText] = useState(task.title);
   const textInputRef = useRef<TextInput>(null);
@@ -35,7 +35,7 @@ const TaskItem = ({index, task, toggleTaskDone, removeTask, updateTaskName}: Tas
   function handleRemoveTask(id: number) {
     if (!isEditing) {
       Alert.alert('Remover', 'Are you sure?', [
-        {text: 'No'},
+        { text: 'No' },
         {
           text: 'Yes',
           onPress: () => removeTask(id)
@@ -61,7 +61,7 @@ const TaskItem = ({index, task, toggleTaskDone, removeTask, updateTaskName}: Tas
             style={task.done ? styles.taskMarkerDone : styles.taskMarker}
             onPress={() => toggleTaskDone(task.id)}
           >
-            {task.done && <Icon name='check' size={12} color='#FFF' />}
+            {task.done && <Icon name="check" size={12} color="#FFF" />}
           </TouchableOpacity>
           <TextInput
             ref={textInputRef}
@@ -84,7 +84,7 @@ const TaskItem = ({index, task, toggleTaskDone, removeTask, updateTaskName}: Tas
           }}
           onPress={!isEditing ? handleStartEdition : handleCancelEdition}
         >
-          {!isEditing ? <Image source={editIcon} /> : <Icon name='x' size={24} color='#bbb' />}
+          {!isEditing ? <Image source={editIcon} /> : <Icon name="x" size={24} color="#bbb" />}
         </TouchableOpacity>
         <TouchableOpacity
           testID={`trash-${index}`}
@@ -94,7 +94,7 @@ const TaskItem = ({index, task, toggleTaskDone, removeTask, updateTaskName}: Tas
           }}
           onPress={() => handleRemoveTask(task.id)}
         >
-          <Image style={{opacity: isEditing ? 0.4 : 1}} source={trashIcon} />
+          <Image style={{ opacity: isEditing ? 0.4 : 1 }} source={trashIcon} />
         </TouchableOpacity>
       </View>
     </>
@@ -125,8 +125,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   taskText: {
-    color: '#666'
-    // fontFamily: 'Inter-Medium'
+    color: '#666',
+    fontSize: 18
   },
   taskMarkerDone: {
     height: 16,

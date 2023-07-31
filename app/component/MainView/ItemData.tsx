@@ -8,6 +8,7 @@ const RenderedItemData = ({item}: any) => {
     </View>
   );
 };
+
 RenderedItemData.whyDidYouRender = true;
 
 export default memo(RenderedItemData);

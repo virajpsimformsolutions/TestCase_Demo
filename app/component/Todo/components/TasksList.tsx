@@ -1,8 +1,8 @@
-import React, {memo} from 'react';
-import {FlatList} from 'react-native';
-import {ItemWrapper} from './ItemWrapper';
+import React, { memo } from 'react';
+import { FlatList } from 'react-native';
+import { TodoItem } from '../../../redux/Todo/types';
+import { ItemWrapper } from './ItemWrapper';
 import TaskItem from './TaskItem';
-import {TodoItem} from '../../../redux/Todo/types';
 
 interface TasksListProps {
   tasks: TodoItem[];
@@ -11,14 +11,14 @@ interface TasksListProps {
   updateTaskName: (id: number, newTaskName: string) => void;
 }
 
-const TasksList = ({tasks, toggleTaskDone, removeTask, updateTaskName}: TasksListProps) => {
+const TasksList = ({ tasks, toggleTaskDone, removeTask, updateTaskName }: TasksListProps) => {
   return (
     <FlatList
       data={tasks}
       keyExtractor={(item) => String(item.id)}
-      contentContainerStyle={{paddingBottom: 24}}
+      contentContainerStyle={{ paddingBottom: 24 }}
       showsVerticalScrollIndicator={false}
-      renderItem={({item, index}) => {
+      renderItem={({ item, index }) => {
         return (
           <ItemWrapper index={index}>
             <TaskItem

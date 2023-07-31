@@ -4,15 +4,7 @@ import styles from '../../styles';
 
 const CoinItem = ({marketCoin, setTitle, setPrice}: any) => {
   // <------ 2. Import the setPrice function
-  const {
-    name,
-    current_price,
-    market_cap_rank,
-    price_change_percentage_24h,
-    symbol,
-    market_cap,
-    image
-  } = marketCoin;
+  const { name, current_price, market_cap_rank, price_change_percentage_24h, image } = marketCoin;
 
   const percentageColor = price_change_percentage_24h < 1 ? '#ea3943' : '#16c784' || 'white';
 

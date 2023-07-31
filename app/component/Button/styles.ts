@@ -1,5 +1,4 @@
-import {StyleSheet} from 'react-native';
-import {Colors, Metrics, moderateScaleWithNewSize} from '../../theme';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   textStyle: {
@@ -9,10 +8,11 @@ const styles = StyleSheet.create({
     fontWeight: '600'
   },
   buttonStyle: {
+    marginTop: 10,
     height: 45,
     alignSelf: 'stretch',
     justifyContent: 'center',
-    backgroundColor: '#38ba7d',
+    backgroundColor: '#34ba7d',
     borderBottomWidth: 6,
     borderBottomColor: '#1e6343',
     borderWidth: 1,

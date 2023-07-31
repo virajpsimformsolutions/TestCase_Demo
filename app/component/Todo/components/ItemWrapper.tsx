@@ -1,13 +1,12 @@
-import React, {ReactNode} from 'react';
-import {View} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import React, { ReactNode } from 'react';
+import { View } from 'react-native';
 
 interface ItemWrapperProps {
   index: number;
   children: ReactNode;
 }
 
-export function ItemWrapper({index, children}: ItemWrapperProps) {
+export function ItemWrapper({ index, children }: ItemWrapperProps) {
   return (
     <View
       style={{

@@ -1,6 +1,6 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
-import {Home} from '../../../../app/component/Todo/pages/HomePage';
+import { Home } from '../../../../app/component/Todo/pages/TodoHomePage';
 
 describe('Home', () => {
   it('should be able to render new added tasks', () => {

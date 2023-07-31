@@ -1,11 +1,6 @@
 {
   "eslint.alwaysShowStatus": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "javascript.validate.enable": true,
   "typescript.validate.enable": true,
   "json.format.enable": false,
@@ -31,5 +26,6 @@
   "docwriter.style": "JSDoc",
   "javascript.format.enable": false,
   "typescript.format.enable": false,
-  "css.format.enable": false
+  "css.format.enable": false,
+  "editor.acceptSuggestionOnEnter": "on"
 }
