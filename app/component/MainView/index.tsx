@@ -7,6 +7,7 @@ import APIView from './APIView';
 import HeaderScroll from './BigList';
 import { useFetch } from '../../hook/useFeatch';
 import TreeSelection from '../TreeSelection';
+import { SheetManager } from 'react-native-actions-sheet';
 
 const MainView = () => {
   const fetchedResponse = useFetch('https://www.hpb.health.gov.lk/api/get-current-statistical');
@@ -86,6 +87,14 @@ const MainView = () => {
           setCurrentView('treeData');
         }}
         label={'TreeData'}
+      />
+      <BaseButton
+        onPress={() => {
+          SheetManager.show('example-sheet', {
+            payload: { value: 'Hello World' }
+          });
+        }}
+        label={'Sheet'}
       />
     </View>
   );

@@ -1,122 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1685618380301" clover="3.2.0">
-  <project timestamp="1685618380301" name="All files">
-    <metrics statements="66" coveredstatements="66" conditionals="16" coveredconditionals="15" methods="25" coveredmethods="25" elements="107" coveredelements="106" complexity="0" loc="66" ncloc="66" packages="7" files="10" classes="10"/>
+<coverage generated="1722924629712" clover="3.2.0">
+  <project timestamp="1722924629713" name="All files">
+    <metrics statements="38" coveredstatements="33" conditionals="6" coveredconditionals="2" methods="15" coveredmethods="10" elements="59" coveredelements="45" complexity="0" loc="38" ncloc="38" packages="5" files="6" classes="6"/>
     <package name="component.Button">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="index.tsx" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/Button/index.tsx">
+      <file name="index.tsx" path="/Users/viraj.p/Project/React_Native/TodoApp/app/component/Button/index.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/Button/styles.ts">
+      <file name="styles.ts" path="/Users/viraj.p/Project/React_Native/TodoApp/app/component/Button/styles.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
     <package name="component.MainView">
-      <metrics statements="43" coveredstatements="43" conditionals="11" coveredconditionals="10" methods="15" coveredmethods="15"/>
-      <file name="APIView.tsx" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/MainView/APIView.tsx">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
+      <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <file name="APIView.tsx" path="/Users/viraj.p/Project/React_Native/TodoApp/app/component/MainView/APIView.tsx">
+        <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
         <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="36" count="6" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-      </file>
-      <file name="ListTodo.tsx" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/MainView/ListTodo.tsx">
-        <metrics statements="25" coveredstatements="25" conditionals="11" coveredconditionals="10" methods="7" coveredmethods="7"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="17" type="stmt"/>
-        <line num="10" count="15" type="stmt"/>
-        <line num="11" count="15" type="stmt"/>
-        <line num="12" count="15" type="stmt"/>
-        <line num="17" count="15" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="25" count="15" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="32" count="15" type="stmt"/>
-        <line num="33" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="39" count="4" type="stmt"/>
-        <line num="42" count="15" type="stmt"/>
-        <line num="43" count="15" type="stmt"/>
-        <line num="44" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="57" count="15" type="stmt"/>
-        <line num="59" count="7" type="stmt"/>
-        <line num="79" count="15" type="stmt"/>
-      </file>
-      <file name="TodoItem.tsx" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/MainView/TodoItem.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="component.Todo.assets.images.logo">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="logo.png" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/Todo/assets/images/logo/logo.png">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
       </file>
     </package>
     <package name="component.Todo.components">
-      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="Header.tsx" path="/Users/virajpatel/Project/React_Native/TodoApp/app/component/Todo/components/Header.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="10" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+      <metrics statements="7" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Header.tsx" path="/Users/viraj.p/Project/React_Native/TodoApp/app/component/Todo/components/Header.tsx">
+        <metrics statements="7" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="57" count="1" type="cond" truecount="0" falsecount="2"/>
       </file>
     </package>
     <package name="redux">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="useStoreHooks.ts" path="/Users/virajpatel/Project/React_Native/TodoApp/app/redux/useStoreHooks.ts">
+      <file name="useStoreHooks.ts" path="/Users/viraj.p/Project/React_Native/TodoApp/app/redux/useStoreHooks.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
     </package>
     <package name="redux.Todo">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
-      <file name="TodoSlice.ts" path="/Users/virajpatel/Project/React_Native/TodoApp/app/redux/Todo/TodoSlice.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
+      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
+      <file name="TodoSlice.ts" path="/Users/viraj.p/Project/React_Native/TodoApp/app/redux/Todo/TodoSlice.ts">
+        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
-        <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="utils">
-      <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-      <file name="test-utils.tsx" path="/Users/virajpatel/Project/React_Native/TodoApp/app/utils/test-utils.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="33" count="5" type="stmt"/>
-        <line num="37" count="5" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
   </project>

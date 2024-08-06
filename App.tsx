@@ -10,6 +10,9 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { Provider } from 'react-redux';
 import MainView from './app/component/MainView';
 import { setupStore } from './app/redux/store';
+import { SheetProvider } from 'react-native-actions-sheet';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import './app/component/ActionSheet/sheets.tsx';
 // import LogRocket from '@logrocket/react-native';
 // LogRocket.init('zfpwij/performance');
 
@@ -30,7 +33,11 @@ function App(): JSX.Element {
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
           backgroundColor={backgroundStyle.backgroundColor}
         />
-        <MainView />
+        <GestureHandlerRootView style={{ flex: 1 }}>
+          <SheetProvider>
+            <MainView />
+          </SheetProvider>
+        </GestureHandlerRootView>
       </SafeAreaView>
     </Provider>
   );
